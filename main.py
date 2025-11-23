@@ -41,7 +41,7 @@ def main():
 
     files = sorted([f for f in os.listdir(TXTS) if f.endswith('.txt')])
     
-    print(f"Iniciando procesamiento de {len(files)} noticias con ventana K={K}...")
+    print(f"Iniciando procesamiento de {len(files)} noticias con K={K}...")
 
     for i, filename in enumerate(files):
         filepath = os.path.join(TXTS, filename)
@@ -74,7 +74,7 @@ def main():
             ax.clear()
             ax.imshow(wc, interpolation='bilinear')
             ax.axis("off")
-            ax.set_title(f"Trending Topics (Ventana: {K} | Noticia: {i+1}/{len(files)})")
+            ax.set_title(f"Trending Topics (K: {K} | Noticia: {i+1}/{len(files)})")
             plt.pause(2) # Pausa para actualizar el grafico
             #time.sleep(2)
 
