@@ -10,7 +10,7 @@ Queue::~Queue() {
     QueueNode* current = this->head;
     while (current != nullptr) {
         QueueNode* next = current->next;
-        delete current->topicsMap; 
+        delete current->Phashmap; 
         delete current;
         current = next;
     }
@@ -40,7 +40,7 @@ HashMap* Queue::pop_front() {
 
     QueueNode* deletenode = this->head;
     
-    HashMap* mapreturn = deletenode->topicsMap;
+    HashMap* mapreturn = deletenode->Phashmap;
 
     // Actualizar head
     this->head = this->head->next;
@@ -63,4 +63,5 @@ int Queue::get_size() const {
 
 bool Queue::is_empty() const {
     return this->size == 0;
+
 }
