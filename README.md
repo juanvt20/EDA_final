@@ -14,3 +14,6 @@ Para compilar este proyecto necesitas tener instalado:
 ### Instalación de dependencias (Python)
 ```bash
 pip install pybind11
+
+
+## Arquitectura de la Estructura de datos
