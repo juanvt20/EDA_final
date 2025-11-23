@@ -26,6 +26,9 @@ pip install scipy
    4. Este archivo `.pyd` se debe mover a la misma carpeta donde se encuentra `main.py`, reemplazando el archivo `.pyd` anterior que se descargó.
 
 5.  Se abre una nueva terminal y se ejecuta el comando  ```bash python main.py```
+### Observaciones
+*   En `main.py` (linea 11 y 12) se encuentra el k y el numero de palabras de la word cloud, esas variables pueden ser modificadas a guso de quien lo compile.
+*   Asegurarse que en el `main.py` (linea 13) se haga referencia bien a la carpeta donde estan las noticias.
 
 ## Arquitectura de la Estructura de datos
 En el siguiente proyecto se usaron 2 estructuras de datos, Tabla Hash y Queue. Donde se gueneran k tablas hash que se almacenan en el queue y se crea una tabla hash general que almacena toda la data del queue.
