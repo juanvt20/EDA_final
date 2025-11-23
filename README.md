@@ -27,16 +27,16 @@ pip install scipy
 
 5.  Se abre una nueva terminal y se ejecuta el comando  ```bash python main.py```
 ### Observaciones
-*   En `main.py` (linea 11 y 12) se encuentra el k y el numero de palabras de la word cloud, esas variables pueden ser modificadas a guso de quien lo compile.
-*   Asegurarse que en el `main.py` (linea 13) se haga referencia bien a la carpeta donde estan las noticias.
+*   En `main.py` (linea 11 y 12) se encuentra el k y el número de palabras de la word cloud, esas variables pueden ser modificadas a gusto de quien lo compile.
+*   Asegurarse que en el `main.py` (linea 13) se haga referencia a la carpeta donde estan las noticias.
 
 ## Arquitectura de la Estructura de datos
-En el siguiente proyecto se usaron 2 estructuras de datos, Tabla Hash y Queue. Donde se gueneran k tablas hash que se almacenan en el queue y se crea una tabla hash general que almacena toda la data del queue.
+En el siguiente proyecto se usaron 2 estructuras de datos, Tabla Hash y Queue. Donde se generan k tablas hash que se almacenan en el queue y se crea una tabla hash general que almacena toda la data del queue.
 Estas Estructuras de datos están formadas de la siguiente manera
 ### Tabla hash
-Esta Tabla Hash, primeramente esta formada de un array(Figura 2), pero este array es un array de punteros a nodos(Figura 1) dode cada nodo tiene 3 variables:key,estas son las palabras que potencialmente aparecerán en la wordcloud; value, es la cantidad de veces que se repite la key y por último un puntero que en caso de colisión apuntará a otro nodo. 
+Esta Tabla Hash, primeramente esta formada de un array(Figura 2), pero este array es un array de punteros a nodos(Figura 1) donde cada nodo tiene 3 variables: key,estas son las palabras que potencialmente aparecerán en la wordcloud; value, es la cantidad de veces que se repite la key; y por último, un puntero que en caso de colisión apuntará a otro nodo. 
 La tabla hash tiene un array estático que en el TopicManager se escoge según se vea necesario para no tener colisiones. 
-Esta tabla hash se eligió debido a que su tiempo de inserción, eliminación y consulta es de O(1) la mayoría de veces(exceto en colisiones), esto hace que sea eficiente a la hora de aplicarlo.
+Esta tabla hash se eligió debido a que su tiempo de inserción, eliminación y consulta es de O(1) la mayoría de veces (excepto en colisiones), esto hace que sea eficiente a la hora de aplicarlo.
 
 #### Figura 1. HashNode
 ![f1](./img/hashnode.jpg)
