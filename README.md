@@ -43,9 +43,9 @@ Esta tabla hash se eligió debido a que su tiempo de inserción, eliminación y 
 #### Figura 2. HashMap
 ![f2](./img//hashmap.jpg)
 ### Queue
-Esta queue(Figura 4), primeramente es una lista enlazada, está formado por queuenode (Figura 3) donde cada nodo esta compuesta por 3 partes: hashmap, este es un puntero a una tabla hash; prev, es un puntero que señala al nodo previo y por ultimo a next, un puntero que apunta al nodo siguiente. 
-La queue es la lista enlazada de cada queuenode, pero a esto se le suma 2 punteros mas, un head, que apunta al elemento mas antiguo en la queue y un tail, que que apunta al elemento más nuevo.
-Se eligió esta estructura ya que se deben almacenar las k noticias mas recientes, así que con sus funciones push_back y pop_front la hacia la mejor opción.
+Esta queue (Figura 4), primeramente es una lista enlazada, está formado por queuenode (Figura 3) donde cada nodo esta compuesta por 3 partes: hashmap, este es un puntero a una tabla hash; prev, es un puntero que señala al nodo previo; y por último a next, un puntero que apunta al nodo siguiente. 
+La queue es la lista enlazada de cada queuenode, pero a esto se le suma 2 punteros más, un head, que apunta al elemento mas antiguo en la queue y un tail, que apunta al elemento más nuevo.
+Se eligió esta estructura debido a que se deben almacenar las k noticias mas recientes, así que con sus funciones push_back y pop_front la hacia la mejor opción.
 #### Figura 3. QueueNode
 ![f3](./img/queuenode.jpg)
 #### Figura 4. Queue
