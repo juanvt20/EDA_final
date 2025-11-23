@@ -5,11 +5,11 @@
 
 // Nodo para el queue
 struct QueueNode {
-    HashMap* topicsMap;
+    HashMap* Phashmap;
     QueueNode* next;
     QueueNode* prev;
 
-    QueueNode(HashMap* map) : topicsMap(map), next(nullptr), prev(nullptr) {}
+    QueueNode(HashMap* map) : Phashmap(map), next(nullptr), prev(nullptr) {}
 };
 
 // Clase queue
@@ -34,5 +34,6 @@ public:
 
     bool is_empty() const;
 };
+
 
 #endif // QUEUE_H
