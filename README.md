@@ -9,13 +9,15 @@ La tabla hash tiene un array estatico que en el TopicManager se escoge y se esco
 Esta tabla hash se eligió debido a que su tiempo de inserción, eliminación y consulta es de o(1) la mayoria de veces(exceto en colisiones), esto hace que sea eficiente a la hora de aplicarlo.
 
 #### Figura 1. HashNode
-![Diagrama de Arquitectura](./img/arquitectura_general.png)
+![f1](./img/hashnode.jpg)
 #### Figura 2. HashMap
-![Diagrama de Arquitectura](./img/arquitectura_general.png)
+![f2](./img//hashmap.jpg)
+### Queue
+Esta queue(Figura 4), primeramente es una lista enlazada, esta formado por queuenode (Figura 3) donde cada nodo esta compuesta por 3 partes: hashmap, este es un puntero a una tabla hash; prev, es un puntero que señala al nodo previo y por ultimo a next, un puntero que apunta al nod siguiente  
 #### Figura 3. QueueNode
-![Diagrama de Arquitectura](./img/arquitectura_general.png)
+![f3](./img/queuenode.jpg)
 #### Figura 4. Queue
-![Diagrama de Arquitectura](./img/arquitectura_general.png)
+![f4](./img/queue.jpg)
 
 ## Requisitos Previos
 
